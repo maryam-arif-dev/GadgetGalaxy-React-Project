@@ -1,4 +1,4 @@
-const gadgetProducts = [
+export const gadgetProducts = [
   {
     id: 1,
     name: "iPhone 15 Pro",
@@ -65,4 +65,6 @@ const gadgetProducts = [
   },
 ];
 
-export default gadgetProducts;
+export function getProductById(id) {
+  return gadgetProducts.find((p) => p.id === Number(id));
+}
