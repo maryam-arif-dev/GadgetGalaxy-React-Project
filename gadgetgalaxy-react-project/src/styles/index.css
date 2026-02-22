@@ -42,6 +42,11 @@ body {
   margin: 20px;
   font-family: "Poppins", sans-serif;
 }
+.custom-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-style: oblique;
+}
 .glass-card {
   background: rgba(255, 255, 255, 0.2) !important;
   backdrop-filter: blur(12px);

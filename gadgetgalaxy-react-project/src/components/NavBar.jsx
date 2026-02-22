@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand">
+        <NavLink to="/" className="navbar-brand custom-brand">
           GadgetGalaxy
         </NavLink>
         <button
