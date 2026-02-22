@@ -23,13 +23,25 @@ export default function ProductDetails() {
       <div className="row align-items-center">
         <div className="col">
           <div className=" card glass-card">
-            <h5 className="card-header">Products</h5>
+            <h5 className="card-header">Product</h5>
             <div className="card-body">
+              <p className="card-text">
+                <img
+                  src={product.iamge}
+                  alt={product.name}
+                  className="card-img-top image"
+                />
+              </p>
               <h5 className="card-title">{product.name}</h5>
-              <p className="card-text">Category: {product.category}</p>
-              <p className="card-text">Price: ${product.price}</p>
-              <p className="card-text">Description: {product.description}</p>
-
+              <p className="card-text">
+                <b>{product.category}</b>
+              </p>
+              <p className="card-text">
+                <b>${product.price}</b>
+              </p>
+              <p className="card-text">
+                <b>{product.description}</b>
+              </p>
               <div className="button-div">
                 <button onClick={() => navigate(-1)} className="button">
                   Back
